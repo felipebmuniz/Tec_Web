@@ -98,3 +98,5 @@ const produtos = [];
 receberProdutos(produtos);
 
 realizarPedido(produtos);
+
+process.exit();

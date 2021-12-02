@@ -40,3 +40,5 @@ function receberAlunos() {
 }
 
 mostrarAlunos(receberAlunos());
+
+process.exit();

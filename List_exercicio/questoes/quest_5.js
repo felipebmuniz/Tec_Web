@@ -310,3 +310,5 @@ do {
       break;
   }
 } while (codigo != '0');
+
+process.exit();

@@ -15,8 +15,6 @@ class Aluno {
 }
 
 function relatorioAlunos(alunos) {
-  console.log(alunos);
-
   const aprovados = alunos.filter((aluno) => aluno.getAluno.media > 5.0);
 
   if (aprovados) {
@@ -62,3 +60,5 @@ function receberAlunos() {
 }
 
 relatorioAlunos(receberAlunos());
+
+process.exit();

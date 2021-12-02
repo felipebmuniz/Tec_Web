@@ -68,3 +68,5 @@ function receberAlunos() {
 }
 
 relatorioAlunos(receberAlunos());
+
+process.exit();
