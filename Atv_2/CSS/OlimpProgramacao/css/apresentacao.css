@@ -1,0 +1,150 @@
+body {
+            margin: 0;
+            font-family: 'Ubuntu', 'Oswald', sans-serif;
+            background-color: lightgray;
+        }
+        
+        .cabecalho {
+            background: #333;
+            color: #fff;
+            border-bottom: solid 5px #4faddb;
+            height: 80px;
+        }
+        
+        .logo img {
+            height: 50px;
+        }
+        
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .cabecalho a {
+            text-decoration: none;
+            color: #eee;
+            font-size: 1.3em;
+            padding: 10px 15px;
+        }
+        
+        .menu a:hover {
+            background-color: #4faddb;
+            color: #000;
+            border-radius: 10px;
+        }
+        
+        .cabecalho .botao {
+            border-radius: 30px;
+            padding: 10px 25px;
+            margin-right: 10px;
+        }
+        
+        .destaque {
+            background: #f50a31;
+            color: #fff;
+        }
+        /* ==================== */
+        /* Solução com Flex Box */
+        /* ==================== */
+        .cabecalho {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .menu {
+            flex-grow: 10;
+        }
+
+        .menu ul {
+            display: flex;
+            /* justify-content: space-around; */
+        }
+
+        .menu li {
+            margin: 0px 10px;
+        }
+
+        #content {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-evenly;
+          padding: 50px;
+          max-width: 100vw;
+          max-height: 100vh;
+        }
+
+        .banner {
+          height: 500px;
+          width: 500px;
+          padding: 60px;
+        }
+
+        .info{
+          text-align: center;
+        }
+
+        .banner img {
+          margin-left: 40px;
+          max-width: 100%;
+          max-height: 100%;
+          border-radius: 10px;
+        }
+        
+        .list {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+        }
+
+        .list p{
+          height: 70px;
+          width: 70px;
+          border-radius: 50%;
+          background-size: cover;
+        }
+
+        .javaScript {
+          background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png");
+        }
+
+        .c {
+          background-image: url("https://img2.gratispng.com/20180408/khq/kisspng-c-programming-language-computer-icons-computer-pr-programming-5acadc61f299d0.3171672115232441299937.jpg");
+        }
+
+        .node {
+          background-image: url("https://img2.gratispng.com/20180425/jrw/kisspng-node-js-javascript-web-application-express-js-comp-5ae0f84e2a4242.1423638015246930701731.jpg");
+        }
+
+        #content ol {
+          list-style: none;
+        }
+
+        #content li {
+          font-size: 1.2rem;
+        }
+
+        .enviar {
+          margin-left: 60px;
+          display: flex;
+          align-items: center;
+          background-color: #f50a31;
+          border-color: #f50a31;
+          border-radius: 10px;
+          text-align: center;
+          border: #fff;
+        }
+
+        .enviar a {
+          text-decoration: none;
+          color: #eee;
+          font-size: 1.3em;
+          padding: 10px 15px;
+        }
+
+        .enviar:hover {
+          background-color: #4faddb;
+          color: aliceblue;
+          border-radius: 10px;
+      }

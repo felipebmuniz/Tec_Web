@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Página de Cadastro</title>
+</head>
+
+<body>
+
+	<form action="./resultado.html" method="get">
+
+		<table>
+			<tr>
+				<td> Nome </td>
+				<td><input type="text" name="name_form" /></td>
+			</tr>
+			<tr>
+				<td> Email </td>
+				<td><input type="email" name="email_form" /></td>
+			</tr>
+			<tr>
+				<td> Senha </td>
+				<td><input type="password" name="password_form" /></td>
+			</tr>
+			<tr>
+				<td> Modalidade </td>
+				<td><select name="modalidade_form" id="modalidade" required>
+						<option value="" disabled selected> Selecione</option>
+						<option value="iniciante">Iniciante</option>
+						<option value="intermediario">Intermediário</option>
+						<option value="avancado">Avançado</option>
+					</select></td>
+			</tr>
+			<tr>
+				<td>Linguagens</td>
+				<td>
+					<label for="java"><input type="checkbox" name="java" id="java">Java</label>
+
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><label for="c"><input type="checkbox" name="c" id="c">C</label></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><label for="c++"><input type="checkbox" name="c++" id="c++">C++</label></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><label for="python"><input type="checkbox" name="python" id="python">Python</label></td>
+			</tr>
+			<tr>
+				<td>Escolha o <br>peíodo</td>
+				<td><label for="manha"><input type="radio" name="periodo" id="manha">Manhã</label></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><label for="tarde"><input type="radio" name="periodo" id="tarde">Tarde</label></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><label for="noite"><input type="radio" name="periodo" id="noite">Noite</label></td>
+			</tr>
+			<tr>
+				<td>Apresentação</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><textarea name="" id="" cols="30" rows="10" required></textarea></td>
+			</tr>
+			<tr>
+				<td><button type="submit">Enviar</button></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+
+</html>

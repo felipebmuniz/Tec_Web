@@ -1,0 +1,78 @@
+html{
+  font-family: 'Ubuntu', 'Oswald', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: lightgray;
+}
+
+.cabecalho {
+  background: #333;
+  color: #fff;
+  border-bottom: solid 5px #4faddb;
+  height: 80px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cabecalho a {
+  text-decoration: none;
+  color: #eee;
+  font-size: 1.3em;
+  padding: 10px 15px;
+}
+
+.menu a:hover {
+  background-color: #4faddb;
+  color: #000;
+  border-radius: 10px;
+}
+
+.cabecalho .botao {
+  border-radius: 30px;
+  padding: 10px 25px;
+  margin-right: 10px;
+}
+
+.destaque {
+  background: #f50a31;
+  color: #fff;
+}
+/* ==================== */
+/* Solução com Flex Box */
+/* ==================== */
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  flex-grow: 10;
+}
+
+.menu ul {
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.menu li {
+  margin: 0px 10px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 50px;
+}
