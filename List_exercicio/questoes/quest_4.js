@@ -27,7 +27,10 @@ function receberProdutos(produtos) {
       codigo = readlineSync.question(
         `\nDigite o codigo do produto ${index} (Aceita somente numero) : `,
       );
-    } while (typeof Number(codigo) == Number);
+      if (!Number(codigo)) {
+        codigo = null;
+      }
+    } while (codigo == null);
 
     do {
       nome = readlineSync.question(
