@@ -255,7 +255,27 @@ function setPontuacao(pontuacao) {
 function placar(jogador) {
   const pontuacao = document.querySelector('.progresso').textContent;
   console.log(jogador, pontuacao);
-  alert(`Jogador: ${jogador}\nPlacar: ${pontuacao}`);
+  const navegar = confirm(
+    `\nJogador: ${jogador}\nPlacar: ${pontuacao} \n\nPara tentar novamente click em 'OK'`,
+  );
+
+  if (navegar == true) {
+    window.location.href = '../flappy.html';
+  } else {
+    localStorage.clear();
+    window.location.href = '../form.html';
+  }
+}
+
+function sairTreino() {
+  link = novoElemento('a', 'link');
+  bnt = novoElemento('div', 'botao');
+  elemento = document.querySelector('body');
+  elemento.appendChild(link);
+  link.appendChild(bnt);
+
+  link.href = '../form.html';
+  bnt.appendChild(document.createTextNode('Sair do Treino'));
 }
 
 function FlappyBird() {
@@ -266,6 +286,10 @@ function FlappyBird() {
 
   const valores = getValoresLocal();
   setCenario(valores.cenario);
+
+  if (setTipo(valores.tipo) == 'treino') {
+    sairTreino();
+  }
 
   const progresso = new Progresso();
   const barreiras = new Barreiras(

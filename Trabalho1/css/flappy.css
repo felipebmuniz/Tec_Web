@@ -90,3 +90,30 @@ body {
   font-size: 70px;
   z-index: 100;
 }
+
+.link {
+  text-decoration: none;
+}
+
+.botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.4rem;
+  background: limegreen;
+  color: #eee;
+  min-width: 8rem;
+  padding: 0.8rem 1.2rem;
+  box-sizing: border-box;
+  transition: 0.1s;
+}
+
+.botao:hover,
+.botao:focus {
+  outline: none;
+  color: #fff;
+  box-shadow: 0 0 0 3px greenyellow, 0 0 0 4px lawngreen;
+}
