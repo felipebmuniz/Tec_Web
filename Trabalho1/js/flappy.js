@@ -73,7 +73,7 @@ function Barreiras(
 function Passaro(alturaJogo, personagem, velocidade) {
   let voando = false;
   this.elemento = novoElemento('img', 'passaro');
-  this.elemento.src = `../img/${personagem}.png`;
+  this.elemento.src = `./img/${personagem}.png`;
 
   this.getY = () => parseInt(this.elemento.style.bottom.split('px')[0]);
   this.setY = (y) => (this.elemento.style.bottom = `${y}px`);
@@ -260,10 +260,10 @@ function placar(jogador) {
   );
 
   if (navegar == true) {
-    window.location.href = '../flappy.html';
+    window.location.href = './flappy.html';
   } else {
     localStorage.clear();
-    window.location.href = '../form.html';
+    window.location.href = './form.html';
   }
 }
 
@@ -274,7 +274,7 @@ function sairTreino() {
   elemento.appendChild(link);
   link.appendChild(bnt);
 
-  link.href = '../form.html';
+  link.href = './form.html';
   bnt.appendChild(document.createTextNode('Sair do Treino'));
 }
 
