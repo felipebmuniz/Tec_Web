@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url('../fonts/Oswald-Regular.ttf') format('truetype');
+  font-family: 'Pixel';
+  src: url('../fontes/Pixel.ttf');
+}
+
+* {
+  font-family: 'Oswald';
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  padding-top: 6rem;
+  margin: 0;
+  background-color: #0d262d;
+  color: #fff;
+  height: 100%;
+}
+
+.container {
+  max-width: 50rem;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  background: darkgray;
+  border-radius: 0.5rem;
+}
+
+.wrapper-text,
+.wrapper-radio {
+  margin-bottom: 2rem;
+}
+
+.input {
+  border: 1px solid #eee;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  background: #eee;
+  transition: 0.2s;
+}
+
+.input:hover,
+.input:focus {
+  outline: none;
+  border-color: #0d262d;
+  background: white;
+  box-shadow: 0 0 0 3px #555;
+}
+
+.label {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding-bottom: 0.5rem;
+}
+
+.radio_options {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #555;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.space_bnt {
+  display: flex;
+  justify-content: end;
+}
+
+.botao {
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.4rem;
+  background: limegreen;
+  color: #fff;
+  min-width: 8rem;
+  padding: 0.8rem 1.2rem;
+  box-sizing: border-box;
+  transition: 0.1s;
+}
+
+.botao:hover,
+.botao:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px greenyellow, 0 0 0 4px lawngreen;
+}

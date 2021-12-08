@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flappy Bird - Menu</title>
+
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="menu">
+      <a class="link" href="form.html"><img class="logo" src="../img/bird.png" alt="logo">
+        Flappy Bird</h2>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container">
+
+      <form id="formulario">
+        <div class="wrapper-text">
+          <label class="label" for="nome">
+            Nome do Jogador
+          </label>
+          <input class="input" id="nome" type="text" placeholder="Digite o nome do jogador" />
+        </div>
+
+        <div class="wrapper-radio">
+          <label class="label">
+            Cenário do Jogo
+          </label>
+          <div class="radio_options">
+            <div class="option">
+              <label for="noturno">Noturno</label>
+              <input type="radio" name="cenario" id="noturno" value="noturno">
+            </div>
+
+            <div class="option">
+              <label for="diurno">Diurno</label>
+              <input type="radio" name="cenario" id="diurno" value="diurno">
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper-radio">
+          <label class="label">
+            Intervalo entre aberturas dos canos
+          </label>
+          <div class="radio_options">
+            <div class="option">
+              <label for="facil">Fácil</label>
+              <input type="radio" name="intervalo" id="facil" value="facil">
+            </div>
+
+            <div class="option">
+              <label for="medio">Médio</label>
+              <input type="radio" name="intervalo" id="medio" value="medio">
+            </div>
+
+            <div class="option">
+              <label for="dificil">Difícil</label>
+              <input type="radio" name="intervalo" id="dificil" value="dificil">
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper-radio">
+          <label class="label">
+            Distância entre os canos
+          </label>
+          <div class="radio_options">
+            <div class="option">
+              <label for="facil_D">Fácil</label>
+              <input type="radio" name="distancia" id="facil_D" value="facil">
+            </div>
+
+            <div class="option">
+              <label for="medio_D">Médio</label>
+              <input type="radio" name="distancia" id="medio_D" value="medio">
+            </div>
+
+            <div class="option">
+              <label for="dificil_D">Difícil</label>
+              <input type="radio" name="distancia" id="dificil_D" value="dificil">
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper-text">
+          <label class="label">
+            Velocidade do jogo
+          </label>
+          <input class="input" id="velocidade" type="number" placeholder="Valores de 1 até 10" />
+        </div>
+
+        <div class="wrapper-radio">
+          <label class="label">
+            Personagens
+          </label>
+          <div class="radio_options">
+            <div class="option">
+              <label for="bird"><img src="./img/bird.png" width="80px" alt="bird">
+              </label>
+              <input type="radio" name="personagem" id="bird" value="bird">
+            </div>
+
+            <div class="option">
+              <label for="articuno"><img src="./img/articuno.png" height="80px" alt="articuno"></label>
+              <input type="radio" name="personagem" id="articuno" value="articuno">
+            </div>
+
+            <div class="option">
+              <label for="charizard"><img src="./img/charizard.png" height="80px" alt="charizard"></label>
+              <input type="radio" name="personagem" id="charizard" value="charizard">
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper-radio">
+          <label class="label">
+            Tipo do jogo
+          </label>
+          <div class="radio_options">
+            <div class="option">
+              <label for="treino">Treino</label>
+              <input type="radio" name="tipo" id="treino" value="treino">
+            </div>
+
+            <div class="option">
+              <label for="real">Real</label>
+              <input type="radio" name="tipo" id="real" value="real">
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper-radio">
+          <label class="label">
+            Velocidade do personagem
+          </label>
+          <div class="radio_options">
+            <div class="option">
+              <label for="baixa">Baixa</label>
+              <input type="radio" name="vel_personagem" id="baixa" value="baixa">
+            </div>
+
+            <div class="option">
+              <label for="media">Média</label>
+              <input type="radio" name="vel_personagem" id="media" value="media">
+            </div>
+
+            <div class="option">
+              <label for="rapida">Rápida</label>
+              <input type="radio" name="vel_personagem" id="rapida" value="rapida">
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper-radio">
+          <label class="label">
+            Pontuação
+          </label>
+          <div class="radio_options">
+            <div class="option">
+              <label for="1">1</label>
+              <input type="radio" name="pontuacao" id="1" value="1">
+            </div>
+
+            <div class="option">
+              <label for="10">10</label>
+              <input type="radio" name="pontuacao" id="10" value="10">
+            </div>
+
+            <div class="option">
+              <label for="100">100</label>
+              <input type="radio" name="pontuacao" id="100" value="100">
+            </div>
+          </div>
+        </div>
+
+        <div class="space_bnt">
+          <button class="botao" id="enviar" type="submit">Jogar</button>
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+  <script src="js/form.js"></script>
+</body>
+
+</html>
